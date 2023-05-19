@@ -67,7 +67,7 @@ form {
 .column {
     float: left;
     width: 25%;
-    padding: 10px;
+    padding: 8px;
 }
 
 
@@ -77,3 +77,15 @@ form {
     text-align: center;
     background-color: #151F30;
 }
+
+
+@media (max-width: 500px)  {
+    .thumbnail {
+   height: 100%;
+    width: 100%;
+    border-radius: 20px;
+
+
+    }
+  
+  }

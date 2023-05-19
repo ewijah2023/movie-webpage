@@ -48,11 +48,11 @@ searchForm.addEventListener("submit", (e) => {
     e.preventDefault();
     mainSection.innerHTML = '';
 
-    const searchItem = search.value;
+    const searchItem = searchInput.value;
 
     if (searchItem) {
         returnMovies(SEARCH_API + searchItem)
-        search.value = '';
+        search.value = "";
     }
 });
 

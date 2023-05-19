@@ -14,12 +14,16 @@ function returnMovies(url) {
         data.results.forEach(element => {
             const divCard = document.createElement("div");
             divCard.setAttribute("class", "movie-card");
+
             const divRow = document.createElement("div");
             divRow.setAttribute("class", "row");
+
             const divColumn = document.createElement("div");
-            divCard.setAttribute("class", "column");
+            divColumn.setAttribute("class", "column");
+
             const movieImage = document.createElement("img");
-            divCard.setAttribute("class", "thumbnail");
+            movieImage.setAttribute("class", "thumbnail");
+
             const movieTitle = document.createElement("h3");
 
             movieTitle.innerText = `${element.title}`;
